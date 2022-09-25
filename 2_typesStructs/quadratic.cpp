@@ -11,8 +11,15 @@ using std::sqrt; using std::endl;
 std::pair<bool, std::pair<double, double>> quadratic(double a, double b, double c)
 {
 	//get radical, test if negative, return indicating no roots
+	double radical = pow(b, 2) - 4 * a * c;
+	if (radical < 0) return {false, {-1, -1}};
 	
 	//otherwise get roots and return
+	else {
+		double x1 = ( -1 * b + sqrt(radical) ) / (2*a); 
+		double x2 = ( -1 * b - sqrt(radical) ) / (2*a);
+		return {true, {x1, x2}};
+	}
 	
 }
 

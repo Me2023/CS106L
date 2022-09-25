@@ -27,8 +27,13 @@ Student randomStudentFrom(std::string state) {
     return s;
 }
 
-bool found(string name) {}
-Student getStudentWithName(string name) {}
+bool found(string name) {
+    return true;
+}
+Student getStudentWithName(string name) {
+    Student s;
+    return s;
+}
 
 /* std::pair
 
@@ -45,22 +50,3 @@ std::pair<bool, Student> lookupStudent(string name) {
 }
 
 
-int main(){
-    Student s = {"Frankie", "MN", 21};
-    printStudentInfo(s);
-    Student foundStudent = randomStudentFrom("MN");
-    cout << foundStudent.name << endl; // Frankie
-    // std::pair
-    std::pair<int, string> numSuffix = {1,"st"};
-    cout << numSuffix.first << numSuffix.second;
-    return 0;
-    // Aside: auto
-    auto a = 3;
-    auto b = 4.3;
-    auto c = 'X';
-    auto d = "Hello";
-    auto e = std::make_pair(3, "Hello");
-}
-
-
-//prints 1st

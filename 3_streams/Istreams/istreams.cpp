@@ -9,10 +9,10 @@ using std::string; using std::cin;
 //read numbers from a file
 void readNumbers() {
     // Create our ifstream and make it open the file
-    
+    std::ifstream input("res/numbers.txt");
 
     // Something to store values we get from the stream
-
+    
         // Extract next number from input
         
 
